@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Permanent+Marker&family=Rubik+Dirt&family=Silkscreen&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    background-color: #d9b8a3;
+}
+
+.logo img {
+    height: 38px;
+    width: 37px;
+    margin: 3px 6px;
+}
+
+#nav {
+    display: flex;
+    position: sticky;
+    font-family: 'DynaPuff', cursive;
+    background-color: rgb(137, 167, 167);
+}
+
+#nav ul {
+    display: flex;
+}
+
+#nav ul li {
+    list-style: none;
+    margin: 0.7rem 1rem;
+
+}
+
+#nav ul li a {
+    font-size: 0.9rem;
+    margin: 4px 4px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    font-weight: bold;
+}
+
+.join-us {
+    color: rgb(227, 227, 219);
+    margin: .5rem 1rem;
+    padding: 4px 13px;
+    cursor: pointer;
+    background-color: rgb(63, 85, 230);
+    border-radius: 10px;
+    position: absolute;
+    right: 32px;
+}
+
+.join-us:hover {
+    background-color: rgb(127, 227, 27);
+    color: rgb(9, 9, 9);
+}
+
+.hamburg {
+    color: blue;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border: 2px solid firebrick;
+    display: none;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button:hover {
+    background-color: rgba(58, 55, 55, 0.781);
+    color: rgb(253, 246, 246);
+    font-weight: 900;
+}
+
+.frame1 {
+    margin-top: 4rem;
+}
+
+.frame1-head {
+    font-size: 3rem;
+}
+
+.frame1-content {
+    list-style: none;
+}
+
+.frame1-content li:nth-child(1) {
+    color: #2601f2;
+    font-size: 1.7rem;
+}
+
+.frame1-content li {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.btn button {
+    padding: .7rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.frame2 {
+    margin: 4rem 0;
+}
+
+.frame2-head {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.profiles {
+
+    grid-template-columns: 33% 33% 33%;
+    display: grid;
+    margin: 1rem;
+}
+
+.psycho-profile {
+    border-radius: 1rem;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(215, 100, 100);
+    margin: 0 1rem;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
+
+.profile-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.profile-content h1 {
+    margin: .5rem 0;
+    font-size: 2rem;
+}
+
+.specialist {
+    margin: .5rem 0rem;
+    color: rgb(227, 44, 224);
+    font-size: 1.2rem;
+}
+
+.detail {
+    font-weight: bold;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.profile-btn {
+    text-align: center;
+}
+
+.profile-btn button {
+    margin: 1rem 0;
+    padding: .8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: brown;
+    background: cornsilk;
+}
+
+.profile-btn button:hover {
+    background-color: burlywood;
+    color: #2601f2;
+}
+
+.frame-method {
+    border-radius: 1rem;
+    box-shadow: 6px -6px rgb(139, 220, 220);
+    border: 3px solid rgb(81 82 81 / 58%);
+    margin: 0 1rem;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.frame3-head {
+    text-decoration-line: underline;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.methods {
+    margin: 1rem;
+}
+
+.frame-method {
+    margin: 1rem;
+}
+
+.frame-method ul {
+    font-size: 1.1rem;
+    list-style: none;
+    margin: 1rem;
+}
+
+.frame-method ul li {
+    margin: 1rem 0;
+}
+
+.frame4 {
+
+    background-color: rgba(25, 19, 19, 0.814);
+}
+
+.frame4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame4-contact {
+    text-align: center;
+}
+
+.frame4-contact button {
+    text-align: center;
+    background: none;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    border: none;
+}
+
+.frame4-contact button:hover {
+    border-radius: 1rem;
+    border: .2rem solid black;
+}
+
+/* responsive  */
+@media only screen and (max-width: 700px) {
+    #nav ul li {
+        list-style: none;
+        margin: 0.7rem 0;
+
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    body {
+        width: fit-content;
+    }
+
+    #nav {
+        transition: all 0.3s ease-out;
+        width: fit-content;
+        background: none;
+    }
+
+    .visibality-class {
+        opacity: 0;
+    }
+
+    #nav ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 0 112%;
+    }
+
+    .h-nav {
+        height: 2.7rem;
+        width: 100%;
+    }
+
+    .visibality-class {
+        opacity: 0;
+    }
+
+    .hamburg {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        top: 0.5rem;
+        left: 4rem;
+        border: none;
+        background: none;
+    }
+
+    .join-us {
+        margin: 10px -5rem;
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 1px 7rem;
+    }
+}
